@@ -1,0 +1,25 @@
+.Mui-expanded{
+    background-color:  rgb(30 41 59 / var(--tw-bg-opacity))!important;
+}
+
+.MuiAccordionSummary-content{
+    margin: 4px 0!important;
+}
+
+.MuiAccordion-root:hover{
+    background-color:  rgb(30 41 59 / var(--tw-bg-opacity))!important;
+}
+
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+
+      .active > *{
+        background-color: #7c7c7c;
+      }
