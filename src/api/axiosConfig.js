@@ -6,8 +6,8 @@ import Cookies from 'js-cookie';
 
 const refreshToken  = async () => {
   try {
-    // let {data} = await axios.get('https://quanlydoanvien.vercel.app/auth/requestRefreshToken',
-    let {data} = await axios.get('http://localhost:4000/auth/requestRefreshToken',
+    let {data} = await axios.get('https://quanlydoanvien.vercel.app/auth/requestRefreshToken',
+    // let {data} = await axios.get('http://localhost:4000/auth/requestRefreshToken',
     {
       withCredentials: true,
     });
@@ -19,8 +19,8 @@ const refreshToken  = async () => {
 }
 
 const axiosConfig = axios.create({
-    // baseURL: 'https://quanlydoanvien.vercel.app/',
-    baseURL: 'http://localhost:4000/',
+    baseURL: 'https://quanlydoanvien.vercel.app/',
+    // baseURL: 'http://localhost:4000/',
    
     headers: {
     // 'Content-Type': 'multipart/form-data',
