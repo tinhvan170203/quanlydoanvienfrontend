@@ -73,8 +73,8 @@ export default function DialogChuyenCongtac({
   useEffect(() => {
     const getDonvis = async () => {
       try {
-        let res = await canboApi.getDataForAddPerson();
-        setDonvis(res.data.donvis.map(i => ({ value: i._id, label: i.tendonvi })));
+        let res = await donviApi.getDonvis();
+        setDonvis(res.data.map(i => ({ value: i._id, label: i.tendonvi })));
       } catch (error) {
         console.log(error.message)
       }
