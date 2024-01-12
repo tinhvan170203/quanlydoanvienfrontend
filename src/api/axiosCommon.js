@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 const axiosCommon = axios.create({
-    baseURL: 'https://quanlydoanvien.vercel.app/',
-    // baseURL: 'http://localhost:4000/',
+    // baseURL: 'https://quanlydoanvien.vercel.app/',
+    baseURL: 'http://localhost:4000/',
 
     headers: {
     // 'Content-Type': 'multipart/form-data',
