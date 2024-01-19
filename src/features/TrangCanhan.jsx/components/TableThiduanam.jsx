@@ -208,7 +208,7 @@ export default function TableThidua({
                     style={{ fontWeight: "bold" }}
                   >
                     <Tooltip title={row.thiduanam.ghichu}>
-                      {row.thiduanam.result}
+                      <span>{row.thiduanam.result}</span>
                     </Tooltip>
                   </TableCell>
                 </TableRow>
