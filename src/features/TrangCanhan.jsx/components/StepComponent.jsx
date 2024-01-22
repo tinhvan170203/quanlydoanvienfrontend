@@ -3,7 +3,7 @@ import "../index.css"
 
 const StepComponent = ({ array }) => {
     return (
-        <div className="flex space-x-2 px-4 mx-4 pb-4 scrollhide hover:cursor-pointer">
+        <div key={index} className='step min-w-[364px]' data-aos="fade-left" data-aos-delay={(index + 1)*300} data-aos-once="true">
             {array.map((item,index)=> (
                 <div key={index} className='step min-w-[364px]'>
                     <div className='flex items-center'>
