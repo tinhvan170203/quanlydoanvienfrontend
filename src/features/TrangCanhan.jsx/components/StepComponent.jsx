@@ -3,9 +3,9 @@ import "../index.css"
 
 const StepComponent = ({ array }) => {
     return (
-        <div key={index} className='step min-w-[364px]' data-aos="fade-left" data-aos-delay={(index + 1)*300} data-aos-once="true">
+        <div className="flex space-x-2 px-4 mx-4 pb-4 scrollhide hover:cursor-pointer">
             {array.map((item,index)=> (
-                <div key={index} className='step min-w-[364px]'>
+                <div key={index} className='step min-w-[364px]' data-aos="fade-left" data-aos-delay={(index + 1)*300} data-aos-once="true">
                     <div className='flex items-center'>
                         <div className='w-8 h-8 rounded-full bg-gray-400 text-white flex items-center justify-center'>
                         </div>
