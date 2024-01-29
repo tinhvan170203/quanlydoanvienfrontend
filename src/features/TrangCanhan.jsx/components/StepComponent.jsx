@@ -1,5 +1,6 @@
 import React from 'react';
 import "../index.css"
+import Tooltip from '@mui/material/Tooltip';
 
 const StepComponent = ({ array }) => {
     return (
@@ -11,10 +12,12 @@ const StepComponent = ({ array }) => {
                         </div>
                         <hr className='w-80 border border-black ml-2' />
                     </div>
+                    <Tooltip title={item.ghichu}>
                     <div className='mt-1'>
                         <h5 className='text-sm italic text-gray-600'>{item.date}</h5>
                         <h4 className='font-bold text-sm'>{item.label}</h4>
                     </div>
+                    </Tooltip>
                 </div>
             ))}
         </div>

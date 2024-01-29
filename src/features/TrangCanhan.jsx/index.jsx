@@ -32,15 +32,18 @@ const TrangCanhan = () => {
                 setKhenthuongs(res.data.khenthuongs);
                 setQuatrinhBachams(res.data.quatrinhlenham.map(i => ({
                     date: dayjs(i.tungay).format('DD/MM/YYYY'),
-                    label: i.bacham.bacham
+                    label: i.bacham.bacham,
+                    ghichu: i.ghichu
                 })))
                 setQuatrinhcongtacs(res.data.quatrinhcongtac.map(i => ({
                     date: dayjs(i.tungay).format('DD/MM/YYYY'),
-                    label: i.donvi.tendonvi
+                    label: i.donvi.tendonvi,
+                    ghichu: i.ghichu
                 })))
                 setQuatrinhchucvus(res.data.quatrinhchucvu.map(i => ({
                     date: dayjs(i.tungay).format('DD/MM/YYYY'),
-                    label: i.chucvu.chucvu
+                    label: i.chucvu.chucvu,
+                    ghichu: i.ghichu
                 })))
                 setKiluats(res.data.kiluats);
                 setThiduas(res.data.thiduas);
