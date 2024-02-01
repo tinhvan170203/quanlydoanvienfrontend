@@ -65,19 +65,19 @@ const TrangCanhan = () => {
             </div>
 
             <ul className='p-4 flex flex-col md:flex-row md:flex-wrap shadow-lg'>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Họ tên:</span> <span>{doanvien?.hoten}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Ngày sinh:</span> <span>{dayjs(doanvien?.ngaysinh).format('DD/MM/YYYY')}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Số hiệu CAND:</span> <span>{doanvien?.sohieuCAND}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Quê quán:</span> <span>{doanvien?.quequan}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Số CCCD:</span> <span>{doanvien?.CCCD}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Đảng viên:</span> <span>{doanvien?.dangvien === true ? "Là đảng viên" : "Chưa kết nạp đảng"}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Bậc hàm:</span> <span>{doanvien?.bachamPopulate[0].bacham}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Chức vụ:</span> <span>{doanvien?.chucvuPopulate[0].chucvu}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Đơn vị công tác:</span> <span>{doanvien?.chuyencongtacngoaitinh === true ? doanvien?.donvidiaphuongkhac[0].tendonvi : doanvien?.donviPopulate[0].tendonvi}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Trình độ:</span> <span>{doanvien?.trinhdo}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Lý luận chính trị:</span> <span>{doanvien?.lyluanchinhtri}</span></li>
-                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Trưởng thành đoàn:</span> <span>{doanvien?.truongthanhdoan === true ? "Đã trưởng thành đoàn" : "Chưa"}</span></li>
-                {doanvien?.truongthanhdoan === true && <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Ngày trưởng thành đoàn:</span> <span>{doanvien?.truongthanhdoan === true && dayjs(doanvien?.ngaytruongthanhdoan).format('DD/MM/YYYY')}</span></li>}
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Họ tên:</span> <span className='font-[500] text-orange-500'>{doanvien?.hoten}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Ngày sinh:</span> <span className='font-[500] text-orange-500'>{dayjs(doanvien?.ngaysinh).format('DD/MM/YYYY')}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Số hiệu CAND:</span> <span className='font-[500] text-orange-500'>{doanvien?.sohieuCAND}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Quê quán:</span> <span className='font-[500] text-orange-500'>{doanvien?.quequan}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Số CCCD:</span> <span className='font-[500] text-orange-500'>{doanvien?.CCCD}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Đảng viên:</span> <span className='font-[500] text-orange-500'>{doanvien?.dangvien === true ? "Là đảng viên" : "Chưa kết nạp đảng"}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Bậc hàm:</span> <span className='font-[500] text-orange-500'>{doanvien?.bachamPopulate[0].bacham}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Chức vụ:</span> <span className='font-[500] text-orange-500'>{doanvien?.chucvuPopulate[0].chucvu}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Đơn vị công tác:</span> <span className='font-[500] text-orange-500'>{doanvien?.chuyencongtacngoaitinh === true ? doanvien?.donvidiaphuongkhac[0].tendonvi : doanvien?.donviPopulate[0].tendonvi}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Trình độ:</span> <span className='font-[500] text-orange-500'>{doanvien?.trinhdo}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Lý luận chính trị:</span> <span className='font-[500] text-orange-500'>{doanvien?.lyluanchinhtri}</span></li>
+                <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Trưởng thành đoàn:</span> <span className='font-[500] text-orange-500'>{doanvien?.truongthanhdoan === true ? "Đã trưởng thành đoàn" : "Chưa"}</span></li>
+                {doanvien?.truongthanhdoan === true && <li className='md:basis-1/3 my-1 flex justify-between pr-8 border-r-slate-100'><span className='font-semibold'>Ngày trưởng thành đoàn:</span> <span className='font-[500] text-orange-500'>{doanvien?.truongthanhdoan === true && dayjs(doanvien?.ngaytruongthanhdoan).format('DD/MM/YYYY')}</span></li>}
             </ul>
 
             <div className='mt-8'></div>
